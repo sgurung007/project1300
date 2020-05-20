@@ -146,9 +146,10 @@
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>2.22.1</version>
 					<configuration>
-						<includes>
-							<exclude> **/*MyRunner.java</exclude>
-						</includes>
+						<!-- <includes> <exclude> **/*MyRunner.java</exclude> </includes> -->
+						<suiteXmlFiles>
+							<suiteXmlFile>testng.xml</suiteXmlFile>
+						</suiteXmlFiles>
 					</configuration>
 				</plugin>
 				<plugin>
