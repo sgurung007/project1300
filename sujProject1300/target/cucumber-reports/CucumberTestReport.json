@@ -1,0 +1,74 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-20T21:39:02.720Z",
+        "line": 3,
+        "name": "Verify the USA search title in bbc.com",
+        "description": "",
+        "id": "bbc-search-usa;verify-the-usa-search-title-in-bbc.com",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6934000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Get to bbc",
+            "match": {
+              "location": "stepDefinitions.bbcUSAStepDef.get_to_bbc()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2528000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "put Usa in search and search",
+            "match": {
+              "location": "stepDefinitions.bbcUSAStepDef.put_Usa_in_search_and_search()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7988000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verity the title of the page",
+            "match": {
+              "location": "stepDefinitions.bbcUSAStepDef.verity_the_title_of_the_page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@bbc"
+          }
+        ]
+      }
+    ],
+    "name": "bbc search USA",
+    "description": "",
+    "id": "bbc-search-usa",
+    "keyword": "Feature",
+    "uri": "file:features/bbcUSA.feature",
+    "tags": [
+      {
+        "name": "@bbc",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
