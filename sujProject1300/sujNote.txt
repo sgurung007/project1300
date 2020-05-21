@@ -1,0 +1,2 @@
+TDD is completely functional test cases.
+acceptance test cases: defined by business owner

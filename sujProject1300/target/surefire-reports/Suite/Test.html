@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Surefire test</title>
+<title>TestNG:  Test</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed May 20 16:39:01 CDT 2020</td>
+<td>Started on:</td><td>Thu May 21 16:36:36 CDT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>18 seconds (18369 ms)</td>
+<tr><td>Total time:</td><td>10 seconds (10100 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,9 +76,16 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='runners.MyRunner.runScenario()'><b>runScenario</b><br>Test class: runners.MyRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the USA search title in bbc.com", "bbc search USA"</td>
-<td></td>
-<td>17</td>
-<td>runners.MyRunner@548e7350</td></tr>
+<td><div><pre>java.lang.NullPointerException
+	at stepDefinitions.bbcUSAStepDef.put_Usa_in_search_and_search(bbcUSAStepDef.java:30)
+	at ✽.put Usa in search and search(file:///Users/surajgurung/Documents/java/gits/sujProject1300/features/bbcUSA.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace848958019", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace848958019'><pre>java.lang.NullPointerException
+	at stepDefinitions.bbcUSAStepDef.put_Usa_in_search_and_search(bbcUSAStepDef.java:30)
+	at ✽.put Usa in search and search(file:///Users/surajgurung/Documents/java/gits/sujProject1300/features/bbcUSA.feature:5)
+</pre></div></td>
+<td>9</td>
+<td>runners.MyRunner@464bee09</td></tr>
 </table><p>
 </body>
 </html>

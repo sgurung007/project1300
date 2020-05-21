@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="18369" started-at="2020-05-20T16:39:01 CDT" finished-at="2020-05-20T16:39:20 CDT">
+  <suite name="Suite" duration-ms="10100" started-at="2020-05-21T16:36:36 CDT" finished-at="2020-05-21T16:36:46 CDT">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MyRunner@548e7350]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MyRunner@464bee09]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="18369" started-at="2020-05-20T16:39:01 CDT" finished-at="2020-05-20T16:39:20 CDT">
+    <test name="Test" duration-ms="10100" started-at="2020-05-21T16:36:36 CDT" finished-at="2020-05-21T16:36:46 CDT">
       <class name="runners.MyRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.MyRunner@548e7350]" name="setUpClass" is-config="true" duration-ms="407" started-at="2020-05-20T16:39:01 CDT" finished-at="2020-05-20T16:39:02 CDT">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.MyRunner@464bee09]" name="setUpClass" is-config="true" duration-ms="422" started-at="2020-05-21T16:36:36 CDT" finished-at="2020-05-21T16:36:36 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MyRunner@548e7350]" name="runScenario" duration-ms="17799" started-at="2020-05-20T16:39:02 CDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-05-20T16:39:20 CDT">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MyRunner@464bee09]" name="runScenario" duration-ms="9276" started-at="2020-05-21T16:36:36 CDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-05-21T16:36:45 CDT">
           <params>
             <param index="0">
               <value>
@@ -27,14 +27,22 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at stepDefinitions.bbcUSAStepDef.put_Usa_in_search_and_search(bbcUSAStepDef.java:30)
+at ✽.put Usa in search and search(file:///Users/surajgurung/Documents/java/gits/sujProject1300/features/bbcUSA.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.MyRunner@548e7350]" name="tearDownClass" is-config="true" duration-ms="116" started-at="2020-05-20T16:39:20 CDT" finished-at="2020-05-20T16:39:20 CDT">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.MyRunner@464bee09]" name="tearDownClass" is-config="true" duration-ms="337" started-at="2020-05-21T16:36:45 CDT" finished-at="2020-05-21T16:36:46 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- runners.MyRunner -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

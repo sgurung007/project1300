@@ -11,15 +11,15 @@ import io.cucumber.java.en.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class bbcUSAStepDef {
-	static WebDriver driver;
+	 public static WebDriver driver;
 
 	@Given("Get to bbc")
 	public void get_to_bbc(){
-		//WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup();
 		//System.setProperty("webdriver.chrome.driver","/Users/surajgurung/Documents/java/SujJar/drives/chromedriver");
-		//driver = new ChromeDriver();
-		WebDriverManager.firefoxdriver().setup();
-		driver=new FirefoxDriver();
+		driver = new ChromeDriver();
+		//WebDriverManager.firefoxdriver().setup();
+		//driver=new FirefoxDriver();
 		driver.get("https://www.google.com");
 
 	}
@@ -28,8 +28,9 @@ public class bbcUSAStepDef {
 	public void put_Usa_in_search_and_search() {
 		System.out.println("step2");
 		System.out.println(driver.getTitle());
-		driver.findElement(By.xpath("//*[@id=\"tsf\"]/div[2]/div[1]/div[1]/div/div[2]/input")).sendKeys("USA");
-		driver.findElement(By.xpath("//*[@id=\"tsf\"]/div[2]/div[1]/div[3]/center/input[1]")).click();
+		driver.findElement(By.name("q")).sendKeys("USA"); 
+		driver.findElement(By.name("btnK")).click();
+	
 
 	}
 
